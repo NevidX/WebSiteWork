@@ -1,4 +1,4 @@
-$headerColor:#3bd58d;
+$headerColor:none;
 $subMenuIsActive:block;
 
 
@@ -8,9 +8,12 @@ $subMenuIsActive:block;
     position: relative;
     width: 100%;
     height: 60px;
+    background: linear-gradient(104.58deg, #056088 10.57%, #09A7CA 96.62%);
+
   }
   .header__content {
-    max-width: 1000px;
+    padding: 0 0 0 4.5%;
+    max-width: 1300px;
     height: 100%;
     margin: 0 auto;
     display: flex;
@@ -20,8 +23,16 @@ $subMenuIsActive:block;
   
   .header__logo {
     position: relative;
-    z-index: 10;
-    flex-grow: 1;
+    font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  z-index: 10;
+  flex-grow: 4;
+  letter-spacing: -3;
+  a{
+    color:white;
+  }
   }
   
   .header__logo img {
@@ -66,15 +77,16 @@ $subMenuIsActive:block;
   .header__nav-link {
     display: block;
     font-size: 20px;
-    color: black;
+    color: white;
     width: 100%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 16px;
     line-height: 60px;
     transition: all 0.3s linear;
+    &:hover{background: rgba(14, 87, 129, 0.303);}
   }
   
-  .header__nav-link:hover {
-    background: rgba(80, 80, 80, 0.303);
-  }
   @media (min-width: $md1) {
     .header__nav-sub-menu {
       position: absolute;
@@ -87,6 +99,9 @@ $subMenuIsActive:block;
   }
 
   @media (max-width: $md1) {
+    .header__logo{
+      font-size: 40px;
+    }
     .header__nav-list {
       flex-direction: column;
       align-items: center;

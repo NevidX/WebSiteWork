@@ -9,14 +9,12 @@
 
 // COMPONENTS
 @import "block/_burger.scss";
-@import "block/_header.scss";
+@import "block/_button.scss";
+@import "block/_title.scss";
 // ==============================
 
 // PARTS OF PAGE
-
+@import "block/_header.scss";
+@import "block/_intro.scss";
+@import "block/_company.scss";
 // =============================
-
-.text{
-	font-size: 30px;
-	font-family: Poppins;
-}
