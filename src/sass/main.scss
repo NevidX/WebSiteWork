@@ -1,0 +1,22 @@
+// NULL STYLE
+@import "block/_nullstyle.scss";
+
+//
+
+// VARS
+@import "block/_vars.scss";
+// =============================
+
+// COMPONENTS
+@import "block/_burger.scss";
+@import "block/_header.scss";
+// ==============================
+
+// PARTS OF PAGE
+
+// =============================
+
+.text{
+	font-size: 30px;
+	font-family: Poppins;
+}

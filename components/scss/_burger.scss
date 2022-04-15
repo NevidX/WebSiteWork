@@ -1,0 +1,100 @@
+$burgerColor: black;
+.burger__trigger {
+    display: none;
+}
+.burger__body {
+    display: none;
+}
+
+@media (max-width: $md1) {
+    .burger__trigger {
+        display: block;
+        cursor: pointer;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        left: 5%;
+        bottom: 30%;
+        &:before {
+            content: "";
+            display: block;
+            top: 0;
+            width: 30px;
+            height: 3px;
+            background-color: $burgerColor;
+            transition: all 0.3s ease;
+        }
+        span {
+            display: block;
+            position: absolute;
+            width: 30px;
+            height: 3px;
+            background-color: $burgerColor;
+            margin-top: 8px;
+        }
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            width: 30px;
+            height: 3px;
+            background-color: $burgerColor;
+            transition: all 0.3s ease;
+        }
+    }
+
+    .active {
+        cursor: pointer;
+        width: 25px;
+        height: 25px;
+        transition: all 0.1s ease;
+        &:before {
+            content: "";
+            display: block;
+            top: 0;
+            width: 30px;
+            height: 3px;
+            background-color: $burgerColor;
+            transform: rotateZ(-45deg);
+            margin-top: 9px;
+            transition: all 0.3s ease;
+        }
+        span {
+            display: block;
+            position: absolute;
+            width: 30px;
+            height: 3px;
+            background-color: $burgerColor;
+            margin-top: 12px;
+            opacity: 0;
+        }
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            width: 30px;
+            height: 3px;
+            background-color: $burgerColor;
+            transform: rotateZ(45deg);
+            margin-bottom: 13px;
+            transition: all 0.3s ease;
+        }
+    }
+
+    .burger__body {
+        display: block;
+        overflow: auto;
+        width: 100%;
+        transition: ease 0.4s;
+        background-color: rgba(31, 205, 211, 0.788);
+        position: absolute;
+        z-index: 10;
+    }
+
+    .burger__content {
+        padding: 10px;
+        overflow: hidden;
+    }
+}
