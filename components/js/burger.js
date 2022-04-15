@@ -1,6 +1,8 @@
 
 const burgerTrigger = document.querySelectorAll(".burger__trigger");
 const burgerBody = document.querySelectorAll(".burger__body");
+subMenu = document.querySelectorAll(".header__nav-sub-menu")
+navItem = document.querySelectorAll(".header__nav-item")
 const style = "active";
 const contentWidth = "100vh";
 
@@ -35,3 +37,10 @@ burgerTrigger.forEach((item, i) => {
 });
 
 
+
+navItem.forEach((nav) => {
+    nav.addEventListener("click", (event) => {
+        let currentItem = event.target.nextElementSibling
+        currentItem.classList.toggle("sub-menu-active")
+    })
+})
