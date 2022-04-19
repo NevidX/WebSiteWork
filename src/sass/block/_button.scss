@@ -1,5 +1,7 @@
 .main__btn {
-	display: block;
+	background-color: none;
+	a{
+		display: block;
 	color: white;
 	text-align: center;
 	width: 158px;
@@ -13,4 +15,6 @@
 	transition: all 0.2s ease-in-out;
 	&:hover{
 	}
+	}
+	
 }
