@@ -6,10 +6,14 @@
 .benefits__cards {
 	// justify-content: center;
 	flex-wrap: nowrap;
+	@media(max-width:$md1){
+		flex-direction: column;
+		align-items: center;
+	}
 }
 .benefits__card {
 	width: 420px;
-	height: 313px;
+	height: 330px;
 	padding-top: 56px;
 	padding-bottom: 20px;
 	margin-top: 10px;
