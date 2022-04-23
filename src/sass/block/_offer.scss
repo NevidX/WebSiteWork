@@ -1,0 +1,79 @@
+.offer {
+}
+.offer__content {
+	padding-top: 50px;
+	position: relative;
+	height: 440px;
+}
+.offer__text {
+	position: relative;
+	max-width: 740px;
+	margin: 0 auto;
+	padding: 0 5px 0 5px;
+	z-index: 2;
+}
+.offer__title {
+	font-size: 30px;
+	line-height: 30px;
+	text-align: center;
+	color:white;
+}
+.offer__sub-title {
+	text-align: center;
+	color:white;
+}
+.offer__sumbit-form {
+	width: 100%;
+	padding: 0 20px 0 20px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	z-index: 2;
+}
+.offer__input {
+	width: 100%;
+	padding: 25px;
+	height: 76px;
+	font-size: 15px;
+	font-family: 'Poppins';
+	margin-bottom: 10px;
+}
+.offer__btn {
+	a{
+		width: 138px;
+		height: 76px;
+	}
+}
+.card__bg {
+}
+.offer__bg {
+	opacity: 1;
+	width: 100%;
+}
+.card__img {
+}
+._img {
+}
+.overlay {
+}
+.offer__overlay {
+}
+
+@media(min-width:$md2){
+	.offer__title {
+		font-size: 56px;
+		line-height: 70px;
+	}
+	.offer__sub-title{
+		margin-bottom: 30px;
+	}
+	.offer__sumbit-form{
+		flex-direction: row;
+		justify-content: center;
+	}
+	.offer__input{
+		max-width: 600px;
+		margin-bottom: 0;
+	}
+}
