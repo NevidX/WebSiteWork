@@ -164,20 +164,46 @@ h6 {
 
 .main__btn {
   background: none;
+  position: relative;
+  background: -o-linear-gradient(345.42deg, #056088 10.57%, #09A7CA 96.62%);
+  background: linear-gradient(104.58deg, #056088 10.57%, #09A7CA 96.62%);
+}
+
+.main__btn::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  right: 0px;
+  background: -o-linear-gradient(345.42deg, #09a7ca21 10.57%, #056088 96.62%);
+  background: linear-gradient(104.58deg, #09a7ca21 10.57%, #056088 96.62%);
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.main__btn:hover::after {
+  width: 100%;
 }
 
 .main__btn a {
   font: normal 500 16px/70px "Poppins";
+  position: relative;
+  z-index: 3;
   display: block;
   color: white;
   text-align: center;
   width: 158px;
   height: 72px;
-  background: -o-linear-gradient(345.42deg, #056088 10.57%, #09A7CA 96.62%);
-  background: linear-gradient(104.58deg, #056088 10.57%, #09A7CA 96.62%);
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+
+.main__btn a:hover .main__btn::after {
+  width: 100%;
 }
 
 .title {
@@ -826,6 +852,7 @@ h6 {
 }
 
 .offer__btn a {
+  line-height: 75px;
   width: 138px;
   height: 76px;
 }
@@ -870,12 +897,9 @@ h6 {
 }
 
 .footer__btn {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.footer__btn a {
+  max-width: 150px;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 .footer__list,
@@ -901,7 +925,7 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 100px;
+  margin-top: 50px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -909,7 +933,7 @@ h6 {
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  height: 90px;
+  height: 100px;
   background: white;
   color: black;
 }
@@ -1164,10 +1188,6 @@ h6 {
   }
 
   .footer__btn {
-    width: none;
-  }
-
-  .footer__btn a {
     margin: 0;
   }
 
@@ -1428,7 +1448,7 @@ h6 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    width: 100%;
+    margin: 0 auto;
   }
 
   .benefits__cards {
@@ -1518,7 +1538,7 @@ h6 {
   }
 
   .intro__sub-title {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .company__images {
@@ -1653,7 +1673,8 @@ h6 {
   }
 
   .intro__title {
-    font-size: 25px;
+    font-size: 18px;
+    line-height: 120%;
   }
 
   .company__info {

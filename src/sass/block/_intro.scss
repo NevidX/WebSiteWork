@@ -37,13 +37,14 @@
 		font-size: 30px;
 	}
 	.intro__sub-title{
-		font-size: 12px;
+		font-size: 15px;
 	}
 }
 
 @media(max-width:$md3){
 	.intro__title{
-		font-size: 25px;
+		font-size: 18px;
+		line-height: 120%;
 	}
 	
 }

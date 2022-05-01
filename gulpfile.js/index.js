@@ -22,7 +22,7 @@ const font = require("./task/font.js")
 const server = () => {
 	browserSync.init({
 		server: {
-			baseDir: "./public"
+			baseDir: "./docs"
 		}
 	});
 }

@@ -93,8 +93,8 @@ color: #434343;
 		}
 		.company__btn{
 			display: flex;
-	justify-content: center;
-	width: 100%;
+			justify-content: center;
+			margin: 0 auto;
 		}
 }
 @media(max-width:$md2){
