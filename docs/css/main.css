@@ -96,6 +96,10 @@ h6 {
   overflow: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1300px;
@@ -877,6 +881,10 @@ h6 {
   font: normal 700 66px/77px "Roboto";
   color: #FFFFFF;
   margin-bottom: 16px;
+}
+
+.footer__direct-logo a {
+  color: white;
 }
 
 .footer__direct-adress,

@@ -10,6 +10,9 @@ $md4: 319.98px;
 .wrapper{
 	overflow: hidden;
 }
+html{
+	scroll-behavior: smooth;
+}
 // Container ==============
 .container{
 	margin: 0 auto;
