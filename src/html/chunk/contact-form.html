@@ -3,22 +3,34 @@
 		<div class="contact__form form" data-aos="slide-up" data-aos-delay="100" data-aos-duration="1000">
 			<div class="form__img _img"><img src="img/contact.png" alt=""></div>
 			<div class="form__text text">
-				<div class="form__text-title title">Let's talk about anything you need</div>
-				<div class="form__text-client-info client-info">
-					<div class="client-info__name" data-aos="slide-up" data-aos-delay="200" data-aos-duration="1000"><input
-							class="info-input" placeholder="Your name/company name" type="text"></div>
-					<div class="client-info__email" data-aos="slide-up" data-aos-delay="300" data-aos-duration="1000"><input
-							class="info-input" placeholder="Phone/E-mail" type="text"></div>
-				</div>
-				<div class="form__text-client-message" data-aos="slide-up" data-aos-delay="300" data-aos-duration="1000">
-					<textarea class="info-textarea" placeholder="Message" type="text"></textarea>
-				</div>
-				<button class="main__btn" data-aos="slide-up" data-aos-delay="400" data-aos-duration="1000"><a
-						href="#">Submit</a></button>
+				<form action="mail.php" method="POST">
+
+					<!-- Hidden Required Fields -->
+					<input type="hidden" name="project_name" value="Probuilds">
+					<input type="hidden" name="admin_email" value="433android@mail.ru">
+					<input type="hidden" name="form_subject" value="Заявка с контакт формы">
+					<!-- END Hidden Required Fields -->
+
+					<div class="form__text-title title">Давайте поговорим о том, что вам нужно</div>
+					<div class="form__text-client-info client-info">
+						<div class="client-info__name" data-aos="slide-up" data-aos-delay="200" data-aos-duration="1000">
+							<input class="info-input" placeholder="Ваше имя/имя компании" type="textd" name="user_name">
+						</div>
+						<div class="client-info__email" data-aos="slide-up" data-aos-delay="300" data-aos-duration="1000">
+							<input class="info-input" placeholder="E-mail" type="text" name="user_email">
+						</div>
+					</div>
+					<div class="form__text-client-message" data-aos="slide-up" data-aos-delay="300" data-aos-duration="1000">
+						<textarea class="info-textarea" placeholder="Сообщение" type="text" name="user__message"></textarea>
+					</div>
+					<button class="submit__btn" type="submit" data-aos="slide-up" data-aos-delay="400"
+						data-aos-duration="1000">Отправить</button>
+				</form>
 			</div>
+
 		</div>
 		<div class="contact__others" data-aos="slide-right" data-aos-delay="100" data-aos-duration="1000">
-			<div class="contact__others-title title">Or contact us via e-mails or even mobile call or Whatsapp messages
+			<div class="contact__others-title title">Или свяжитесь с нами через почты или по мобильному телефону в Whatsapp
 			</div>
 			<div class="contact__others-btns">
 				<button class="main__btn contact__btn" data-aos="slide-up" data-aos-delay="200" data-aos-duration="1000"><a
@@ -26,7 +38,7 @@
 				<button class="main__btn contact__btn" data-aos="slide-up" data-aos-delay="300" data-aos-duration="1000"><a
 						href="#">Whatsapp</a></button>
 				<button class="main__btn contact__btn" data-aos="slide-up" data-aos-delay="400" data-aos-duration="1000"><a
-						href="#">Message</a></button>
+						href="#">Сообщение</a></button>
 			</div>
 		</div>
 	</div>

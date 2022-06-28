@@ -23,7 +23,7 @@ $subMenuIsActive:block;
   
   .header__logo {
     position: relative;
-    font-family: 'Roboto';
+    font-family: $font1;
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
@@ -79,7 +79,7 @@ $subMenuIsActive:block;
     font-size: 20px;
     color: white;
     width: 100%;
-    font-family: 'Poppins';
+    font-family: $font1;
     font-style: normal;
     font-size: 16px;
     line-height: 60px;

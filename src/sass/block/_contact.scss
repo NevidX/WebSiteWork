@@ -37,7 +37,7 @@
 	flex-grow: 1;
 }
 .info-input,.info-textarea {
-	font-family: 'Poppins';
+	font-family: $font1;
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
@@ -91,5 +91,36 @@ color: rgba(0, 0, 0, 0.4);
 	}
 	.form__text{
 		padding-top: 44px;
+	}
+}
+
+.submit__btn {
+	width: 158px;
+	height: 72px;
+	position: relative;
+	background: linear-gradient(104.58deg, #056088 10.57%, #09A7CA 96.62%);
+	color: white;
+	text-align: center;
+	font-family: $font1;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 70px;
+	transition: all 0.2s ease-in-out;
+	&::after{
+		content: '';
+		position: absolute;
+		z-index: -1;
+		width: 0%;
+		height: 100%;
+		top:0;
+		right: 0px;
+		background: linear-gradient(104.58deg,#09a7ca21  10.57%, #056088 96.62%);
+		transition: all 0.5s ease-in-out;
+	}
+	&:hover{
+		&::after{
+			width: 100%;
+		}
 	}
 }

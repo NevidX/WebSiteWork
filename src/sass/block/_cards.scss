@@ -43,7 +43,7 @@ $cardTransition:all 0.5s ease-in-out;
 	padding: 44px 37px 27px 40px;
 }
 .card__title,.card__sub-title{
-	font-family: 'Poppins';
+	font-family: $font1;
 	position: relative;
 	z-index: 2;
 	transition: $cardTransition;

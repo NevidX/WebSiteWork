@@ -183,7 +183,7 @@ html {
 }
 
 .main__btn a {
-  font: normal 500 16px/70px "Poppins";
+  font: normal 500 16px/70px "Roboto";
   position: relative;
   z-index: 3;
   display: block;
@@ -201,13 +201,13 @@ html {
 }
 
 .title {
-  font: 700 24px/170% "Poppins";
+  font: 700 24px/170% "Roboto";
   color: #056088;
   margin-bottom: 16px;
 }
 
 .sub-title {
-  font: 400 16px/180% "Poppins";
+  font: 400 16px/180% "Roboto";
   color: #434343;
 }
 
@@ -282,7 +282,7 @@ html {
 
 .card__title,
 .card__sub-title {
-  font-family: "Poppins";
+  font-family: "Roboto";
   position: relative;
   z-index: 2;
   -webkit-transition: all 0.5s ease-in-out;
@@ -410,7 +410,7 @@ html {
 }
 
 .header__nav-link {
-  font: normal 16px/60px "Poppins";
+  font: normal 16px/60px "Roboto";
   display: block;
   color: white;
   width: 100%;
@@ -446,7 +446,7 @@ html {
   margin: 0 auto;
   z-index: 3;
   color: white;
-  font-family: "Poppins";
+  font-family: "Roboto";
   text-align: center;
 }
 
@@ -514,7 +514,7 @@ html {
 }
 
 .company__images .circle__text {
-  font: normal 500 16px/250% "Poppins";
+  font: normal 500 16px/250% "Roboto";
   color: #056088;
 }
 
@@ -528,7 +528,7 @@ html {
 }
 
 .company__sign {
-  font: normal 500 16px/180% "Poppins";
+  font: normal 500 16px/180% "Roboto";
   margin-bottom: 16px;
   color: #434343;
 }
@@ -745,7 +745,7 @@ html {
 }
 
 .block__review {
-  font: 16px/170% "Poppins";
+  font: 16px/170% "Roboto";
   position: absolute;
   bottom: -40px;
   right: 0;
@@ -838,7 +838,7 @@ html {
 }
 
 .offer__input {
-  font: 15px "Poppins";
+  font: 15px "Roboto";
   width: 100%;
   padding: 25px;
   height: 76px;
@@ -1081,7 +1081,7 @@ html {
 
 .info-input,
 .info-textarea {
-  font: normal 500 16px/170% "Poppins";
+  font: normal 500 16px/170% "Roboto";
   color: rgba(0, 0, 0, 0.4);
 }
 
@@ -1118,6 +1118,74 @@ html {
   margin-bottom: 10px;
 }
 
+.submit__btn {
+  font: normal 500 16px/70px "Roboto";
+  width: 158px;
+  height: 72px;
+  position: relative;
+  background: -o-linear-gradient(345.42deg, #056088 10.57%, #09A7CA 96.62%);
+  background: linear-gradient(104.58deg, #056088 10.57%, #09A7CA 96.62%);
+  color: white;
+  text-align: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.submit__btn::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  right: 0px;
+  background: -o-linear-gradient(345.42deg, #09a7ca21 10.57%, #056088 96.62%);
+  background: linear-gradient(104.58deg, #09a7ca21 10.57%, #056088 96.62%);
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.submit__btn:hover::after {
+  width: 100%;
+}
+
+.works__cards {
+  position: relative;
+  margin: 100px auto;
+  max-width: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 5px 0 5px;
+}
+
+.works__card {
+  width: 100%;
+  -webkit-box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.301);
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.301);
+}
+
+.works__card-img {
+  height: 250px;
+}
+
+.works__card-info {
+  padding: 30px;
+}
+
+.works__card-sub-title {
+  margin-bottom: 32px;
+}
+
 @supports (-webkit-appearance:none) {
   .intro {
     background: url(../img/intro-img.webp) center/cover no-repeat;
@@ -1149,6 +1217,11 @@ html {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+  }
+
+  .works__card {
+    max-width: 420px;
+    margin-bottom: 10px;
   }
 
 @supports (-webkit-appearance:none) {
@@ -1220,6 +1293,24 @@ html {
 }
 }
 
+@media (min-width: 850px) {
+  .works__cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
 @media (min-width: 999.98px) {
   .header__nav-sub-menu {
     position: absolute;
@@ -1251,6 +1342,10 @@ html {
 
   .form__text {
     padding-top: 44px;
+  }
+
+  .works__cards {
+    max-width: 1300px;
   }
 
 @supports (-webkit-appearance:none) {
@@ -1671,7 +1766,7 @@ html {
   }
 
   .intro__title {
-    font-size: 18px;
+    font-size: 30px;
     line-height: 120%;
   }
 

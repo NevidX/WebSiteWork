@@ -13,7 +13,7 @@
 	margin: 0 auto;
 	z-index: 3;
 	color:white;
-	font-family: 'Poppins';
+	font-family: $font1;
 	text-align: center;
 }
 .intro__title {
@@ -43,7 +43,7 @@
 
 @media(max-width:$md3){
 	.intro__title{
-		font-size: 18px;
+		font-size: 30px;
 		line-height: 120%;
 	}
 	
